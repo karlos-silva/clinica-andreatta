@@ -1,10 +1,24 @@
 const express = require('express')
+const nunjucks = require('nunjucks')
+
 const server = express()
 
-server.get("/", function(req, res) {
-  res.sendFile(__dirname+"/views/index.html")
+server.use(express.static('public'))
+
+server.set("view engine", "njk")
+
+nunjucks.configure("views", {
+  express: server
 })
 
-server.listen(8080, function() {
-  console.log("servidor rodando na URL http://localhost:8080")
+server.get("/", function(req, res){
+  return res.render("login")
+})
+
+server.get("/home", function(req, res){
+  return res.render("home")
+})
+
+server.listen(5000, function() {
+  console.log('server is running')
 })
