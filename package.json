@@ -1,0 +1,27 @@
+{
+  "name": "clinica-andreatta",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "nunjucks": "^3.2.1",
+    "sequelize": "^5.21.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karlos-silva/clinica-andreatta.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karlos-silva/clinica-andreatta/issues"
+  },
+  "homepage": "https://github.com/karlos-silva/clinica-andreatta#readme"
+}
