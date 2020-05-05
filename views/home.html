@@ -8,7 +8,231 @@
 </head>
 <body>
   
-  Teste
+<div class="principal-page">
+  <div class="form-nav">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4A5899;">
+      <button type="button" class="btn btn-primary" onclick="abrir('login')">Logar</button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Consultas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a aria-disabled="true" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Cliente
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+              <a class="dropdown-item" href="#">Agendar Consulta</a>
+              <a class="dropdown-item" href="#">Resultados</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Chat online</a>
+            </div>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Colaborador
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Marcar Consulta</a>
+                <a class="dropdown-item" href="#">Estoque</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Chat online</a>
+              </div>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Estoque
+            </a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Procurar" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+  <div class="content">
+    <div class="img middle-section">
+          <img src="https://segna.com.br/wp-content/uploads/2019/06/doctor.png" alt="Imagem principal tela inicial">
+          <div class="login-section" id="login" >
+            <div class="form">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email </label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                  <small id="emailHelp" class="form-text text-muted">Nunca compartilharemos seu e-mail com ninguém</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Senha</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                </div>
+                <div class="form-check">
+      
+                </div>
+                <div class="form-bottom">
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                    <button type="submit" class="btn btn-second" onclick="fechar('login')">Voltar</button>
+                </div>
+                
+      
+              </form>
+            </div>
+         </div>
+    </div>
+    <div class="label-content middle-section">
+          <font face="Modern"><h1>O mais alto padrão em serviços oftalmos de Pato Branco e região.</h1></font>
+          <label id="content-information">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</br>
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</br> 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</br> 
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat </br>
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
+    </div>
+  </div>
+</div>
 
+
+<!-- '=='='='='='lOGIN SECTION '-'-'-'-'-'-'-'
+'-'-'-'-'-'-'-'-'-'-''-'-''='='='='='='='='=' -->
+
+
+<div class="form login-section" id="login" >
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email </label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+      <small id="emailHelp" class="form-text text-muted">Nunca compartilharemos seu e-mail com ninguém</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Senha</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+    </div>
+    <div class="form-check">
+
+    </div>
+    <div class="form-button">
+        <button type="submit" class="btn btn-primary">Entrar</button>
+        <button type="submit" class="btn btn-second" onclick="fechar('login')">Voltar</button>
+    </div>
+    
+
+  </form>
+</div>
+
+
+
+
+
+<style>
+
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+}
+
+
+
+.content{
+  background-image: linear-gradient(rgb(25, 25, 46), rgb(57, 54, 94));
+}
+.form-nav{
+  max-width:1600px;
+  height:auto;
+
+}
+  img{
+  display: inline-block;
+	max-width:500px;
+	height:auto;
+}
+
+.information-section{
+  display: inline-block;
+  text-align: justify;
+  background-color: blueviolet;
+  width: 100%;
+}
+
+.label-content{
+  position: relative;
+  max-width:500px;
+  float: right;
+  padding-top: 100px;
+
+
+}
+.middle-section{
+    max-width:800px;
+    max-height: 400px;
+    display: inline-block;
+    padding-left: 70px;
+    padding-right: 70px;
+  
+
+}
+/* '=='='='='='lOGIN SECTION '-'-'-'-'-'-'-'
+'-'-'-'-'-'-'-'-'-'-''-'-''='='='='='='='='=' */
+
+
+.login-section{
+  position: absolute;
+  display: none;
+  width: 80%;
+  left: 30%;
+  color: white;
+
+
+}
+form{
+  box-shadow: 2px 10px 22px black;
+  padding: 20px;
+  border-radius: 7px;
+}
+.form{
+  width: 50%;
+  position: relative;
+  margin: auto;
+  padding-top: 80px;
+
+}
+.form-group{
+  margin: auto;
+  position: relative;
+  
+}
+.form-button{
+  padding-top: 20px;
+  color: white;
+  text-shadow: white;
+}
+
+
+
+</style>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+      function abrir (id){
+        document.getElementById(id).style.display = "inline-block"
+      }
+
+      function fechar (id){
+        document.getElementById(id).style.display = "none"
+      }
+      
+  </script>
 </body>
 </html>
