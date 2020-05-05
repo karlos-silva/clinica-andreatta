@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css"> 
+
   <title>Home</title>
 </head>
 <body>
@@ -11,7 +12,8 @@
 <div class="principal-page">
   <div class="form-nav">
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4A5899;">
-      <button type="button" class="btn btn-primary" onclick="abrir('login')">Logar</button>
+      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalExemplo">Login</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Cadastrar</button>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -61,30 +63,6 @@
   <div class="content">
     <div class="img middle-section">
           <img src="https://segna.com.br/wp-content/uploads/2019/06/doctor.png" alt="Imagem principal tela inicial">
-          <div class="login-section" id="login" >
-            <div class="form">
-              <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email </label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-                  <small id="emailHelp" class="form-text text-muted">Nunca compartilharemos seu e-mail com ninguém</small>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Senha</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-                </div>
-                <div class="form-check">
-      
-                </div>
-                <div class="form-bottom">
-                    <button type="submit" class="btn btn-primary">Entrar</button>
-                    <button type="submit" class="btn btn-second" onclick="fechar('login')">Voltar</button>
-                </div>
-                
-      
-              </form>
-            </div>
-         </div>
     </div>
     <div class="label-content middle-section">
           <font face="Modern"><h1>O mais alto padrão em serviços oftalmos de Pato Branco e região.</h1></font>
@@ -98,34 +76,77 @@
 </div>
 
 
-<!-- '=='='='='='lOGIN SECTION '-'-'-'-'-'-'-'
-'-'-'-'-'-'-'-'-'-'-''-'-''='='='='='='='='=' -->
+
+<!--  '=='='='='='lOGIN SECTION '-'-'-'-'-'-'-' -->
 
 
-<div class="form login-section" id="login" >
-  <form>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email </label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-      <small id="emailHelp" class="form-text text-muted">Nunca compartilharemos seu e-mail com ninguém</small>
+<!-- Login -->
+<div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="email">
+            <label>Email cadastrado</label>
+            <input type="text" class="form-email email" id="email" placeholder="Email">
+          </div></br></br>
+          <label>Senha Cadastrada</label>
+          <div class="senha">
+            <input type="password" name="Senha" placeholder="Senha">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+        <button type="button" class="btn btn-primary">Entrar</button>
+      </div>
     </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Senha</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-    </div>
-    <div class="form-check">
-
-    </div>
-    <div class="form-button">
-        <button type="submit" class="btn btn-primary">Entrar</button>
-        <button type="submit" class="btn btn-second" onclick="fechar('login')">Voltar</button>
-    </div>
-    
-
-  </form>
+  </div>
 </div>
+<!-- Cadastro -->
+<!-- Button trigger modal -->
 
-
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cadastro</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <label>Nome:</label>
+          <input type="text" placeholder="Nome">
+          <label>Sobrenome</label>
+          <input type="text" placeholder="Sobrenome">
+          <label>Email</label>
+          <input type="text" placeholder="Digite seu Email">
+          <input type="text" placeholder="Confirmar Email">
+          <label>Telefone </label>
+          <input type="text" placeholder="Digite seu Telefone">
+          <label>Endereço</label>
+          <input type="text" placeholder="Endereço">
+          <label>Senha</label>
+          <input type="password" id="form-password" placeholder="Confirmar Senha">
+          <input type="password" id="" placeholder="Confirmar Senha">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+        <button type="button" class="btn btn-primary">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -158,7 +179,6 @@
 .information-section{
   display: inline-block;
   text-align: justify;
-  background-color: blueviolet;
   width: 100%;
 }
 
@@ -179,43 +199,33 @@
   
 
 }
+
+.label-content{
+  color: white;
+}
 /* '=='='='='='lOGIN SECTION '-'-'-'-'-'-'-'
 '-'-'-'-'-'-'-'-'-'-''-'-''='='='='='='='='=' */
-
-
-.login-section{
-  position: absolute;
-  display: none;
-  width: 80%;
-  left: 30%;
-  color: white;
-
-
-}
-form{
-  box-shadow: 2px 10px 22px black;
-  padding: 20px;
-  border-radius: 7px;
-}
-.form{
-  width: 50%;
-  position: relative;
-  margin: auto;
-  padding-top: 80px;
-
-}
-.form-group{
-  margin: auto;
-  position: relative;
-  
-}
-.form-button{
-  padding-top: 20px;
-  color: white;
-  text-shadow: white;
+input[type=text] {
+  border: 1px solid black;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
+input[type=password] {
+  border: 1px solid black;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
 
+.btn{
+  padding: 5px;
+}
 
 </style>
   
@@ -225,14 +235,7 @@ form{
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
   <script type="text/javascript">
-      function abrir (id){
-        document.getElementById(id).style.display = "inline-block"
-      }
 
-      function fechar (id){
-        document.getElementById(id).style.display = "none"
-      }
-      
   </script>
 </body>
 </html>
