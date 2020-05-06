@@ -1,0 +1,22 @@
+html,body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+.hero.is-success {
+  background: rgba(190, 196, 199, 0.623);
+}
+.hero .nav, .hero.is-success .nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+input {
+  font-weight: 300;
+}
+p {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: underline;
+}
