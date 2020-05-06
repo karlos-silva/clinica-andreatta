@@ -10,13 +10,14 @@ if(empty($_POST['email']) || empty($_POST['senha'])) {
 $email = mysqli_real_escape_string($conexao, $_POST['email']);
 $senha = mysqli_real_escape_string($conexao, $_POST['senha']);
 
-$query = "SELECT email FROM usuário WHERE email = '$email' AND senha = md5('$senha')";
+$sql = "SELECT email FROM usuário WHERE email = '$email' AND senha = md5('$senha')";
 
-$result = mysqli_query($conexao, $query);
 
-$row = mysqli_num_rows($result);
+$resultado = mysqli_query($conexao, $sql);
 
-if($row == 1) {
+$row = mysqli_num_rows($resultado);
+
+if($row == 0) {
 	$_SESSION['email'] = $email;
 	header('Location: ../home php/home.php');
 	exit();
@@ -25,3 +26,4 @@ if($row == 1) {
 	header('Location: index.php');
 	exit();
 }
+?>
