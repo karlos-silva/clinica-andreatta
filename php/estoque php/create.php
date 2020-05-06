@@ -2,7 +2,7 @@
 
 session_start();
 
-require_once 'db_connect.php';
+require_once '../server php/db_connect.php';
 
 function clear($input) {
   global $connect;
@@ -16,10 +16,10 @@ function clear($input) {
 
 if(isset($_POST['btn-adicionarProdutos'])):
 
-  $nomeProduto = mysqli_escape_string($connect, $_POST['nome']);
-  $quantidadeProduto = mysqli_escape_string($connect, $_POST['quantidade']);
-  $fornecedor = mysqli_escape_string($connect, $_POST['fornecedor']);
-  $validade = mysqli_escape_string($connect, $_POST['validade']);
+  $nomeProduto = clear($_POST['nome']);
+  $quantidadeProduto = clear($_POST['quantidade']);
+  $fornecedor = clear( $_POST['fornecedor']);
+  $validade = clear( $_POST['validade']);
 
   $sql = "INSERT INTO item (nome, quantidade, fornecedor, validade) VALUES ('$nomeProduto', '$quantidadeProduto', '$fornecedor', '$validade')";
 

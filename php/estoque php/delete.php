@@ -2,7 +2,7 @@
 
 session_start();
 
-require_once 'db_connect.php';
+require_once '../server php/db_connect.php';
 
 if(isset($_POST['btn-deletar'])):
 

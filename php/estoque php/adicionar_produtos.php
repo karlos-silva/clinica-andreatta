@@ -24,7 +24,6 @@ include_once 'header.php'
   </div>
 
   <button type="submit" name="btn-adicionarProdutos" class="btn btn-primary"> Adicionar </button>
-  <a href="estoque.php" nameclass="btn btn-primary"> Lista de Produtos </a>
 </form>
 
 

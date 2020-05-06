@@ -1,10 +1,28 @@
 body {
   font-family: Arial;
- background-color: rgb(34, 121, 179);
+ background-color: rgba(201, 230, 250, 0.623);
+}
+
+nav img{
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+nav {
+  background-color: #1e6495;
+  margin-bottom: 50px;
+  font-weight: bolder;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: none;
+
 }
 
 
-.split-left {
+/*.split-left {
   height: 100%;
   width: 50%;
   position: fixed;
@@ -42,4 +60,4 @@ body {
 .centered img {
   width: 150px;
   border-radius: 50%;
-}
+}*/

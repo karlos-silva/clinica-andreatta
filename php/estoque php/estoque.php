@@ -1,7 +1,7 @@
 <?php
 
 
-include_once 'db_connect.php';
+require_once '../server php/db_connect.php';
 
 include_once 'header.php';
 
@@ -30,14 +30,15 @@ include_once 'message.php'
 
                         while($dados = mysqli_fetch_array($resultado)):
                         ?>
-                        <tr>
+                        <tr class="dados">
                             <td><?php echo $dados['nome'];?></td>
                             <td><?php echo $dados['quantidade'];?></td>
                             <td><?php echo $dados['fornecedor'];?></td>
                             <td><?php echo $dados['validade'];?></td>
-                            <td><a href="editar_produtos.php?codigo=<?php echo $dados['codigo'];?>" class="btn btn-info ">Editar</a></td>
-
-                            <td><a href="#modal<?php echo $dados['codigo']; ?>" class="btn red modal-trigger">Deletar</a></td>
+                            <td>
+                                <a href="editar_produtos.php?codigo=<?php echo $dados['codigo'];?>" class="btn btn-info "><i class="material-icons">edit</i></a>
+                                <a href="#modal<?php echo $dados['codigo']; ?>" class="btn red modal-trigger"><i class="material-icons">delete</i></a>
+                            </td>
 
                             <!-- Modal Structure -->
                             <div id="modal<?php echo $dados['codigo']; ?>" class="modal">

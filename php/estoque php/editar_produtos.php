@@ -1,6 +1,6 @@
 <?php
 
-include_once 'db_connect.php';
+require_once '../server php/db_connect.php';
 
 include_once 'header.php';
 
