@@ -1,6 +1,6 @@
 body {
   font-family: Arial;
- background-color: rgba(201, 230, 250, 0.623);
+ background-color: rgba(190, 196, 199, 0.623);
 }
 
 nav img{
@@ -19,6 +19,27 @@ nav a:hover {
   color: white;
   text-decoration: none;
 
+}
+
+.table th {
+  border-top: none;
+}
+
+.input-pesquisar {
+  width: 40vw;
+  margin-bottom: 40px;
+
+}
+
+.btn-pesquisar {
+  margin-top: 20px;
+  margin-left: 10px;
+  position: absolute;
+
+}
+
+.input-add{
+  width: 80vw;
 }
 
 

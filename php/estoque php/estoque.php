@@ -8,11 +8,17 @@ include_once 'header.php';
 include_once 'message.php'
 ?>
 
-  <?php 
-    
-    ?>
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row ">
+                <form action="pesquisar.php" method="POST">
+                    <div class="input-field input-pesquisar ">
+                        <input id="last_name" type="text" class="validate" name="pesquisar">
+                        <label for="last_name">Pesquisar</label>
+                        <button type="submit" class=" btn btn-pesquisar" name="btn-pesquisar" id=" btn btn-pesquisar">Pesquisar</button>
+                    </div>
+                    
+                </form>
+                
                 <table class="table">
                     <thead>
                         <tr>
@@ -47,8 +53,6 @@ include_once 'message.php'
                                 <p>Tem certeza que deseja deletar esse produto?</p>
                                 </div>
                                 <div class="modal-footer">
-                                
-
                                     <form action="delete.php" method="POST">
                                         <input type="hidden" name="codigo" value="<?php echo $dados['codigo'];?>">
                                         <button type="submit" name="btn-deletar" class="btn green">Sim, quero deletar!</button>
@@ -74,7 +78,7 @@ include_once 'message.php'
                 </table>
             </div>
             <a href="adicionar_produtos.php" class= "btn btn-info">Adicionar</a>
-        </div>
+        
 
 <?php
 include_once 'footer.php'
