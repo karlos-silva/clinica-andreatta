@@ -14,7 +14,7 @@ include_once 'header.php';
                     ?>
                     <div class="notification is-success">
                       <p>Cadastro efetuado!</p>
-                      <p>Faça login informando o seu usuário e senha <a href="login.php">aqui</a></p>
+                      <p>Faça login informando o seu usuário e senha <a href="../../php/login php/index.php">aqui</a></p>
                     </div>
                     <?php
                     endif;
@@ -49,7 +49,7 @@ include_once 'header.php';
                             </div>
                             <div class="field">
                                 <div class="control">
-                                    <input name="senha" class="input is-large" type="password" placeholder="Senha">
+                                    <input name="senha" class="input is-large" type="password" placeholder="Senha" >
                                 </div>
                             </div>
                             <button type="submit" class="button is-block is-link is-large is-fullwidth">Cadastrar</button>

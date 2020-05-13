@@ -11,7 +11,7 @@ include_once 'header.php';
 		<?php
                     if(isset($_SESSION['nao_autenticado'])):
                     ?>
-                    <div class="notification is-danger">
+                    <div>
                       <p>ERRO: Email ou senha inválidos.</p>
                     </div>
                     <?php
@@ -40,7 +40,7 @@ include_once 'header.php';
            		    	<input type="password" class="input" name="senha">
             	   </div>
             	</div>
-            	<a href="cadastro.php">Cadastre-se</a>
+            	<a href="../cadastro php/cadastro.php">Cadastre-se</a>
             	<input type="submit" class="btn" value="Entrar">
             </form>
         </div>
