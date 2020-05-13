@@ -1,16 +1,14 @@
-
 <?php
 session_start();
 
 include_once 'header.php';
 ?>
-
-    <section class="hero is-success is-fullheight">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <div class="column is-4 is-offset-4">
-                    <h3 class="title has-text-grey">Login</h3>
-                    <?php
+	<img class="wave" src="../../img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="../../img/background-login.svg">
+		</div>
+		<?php
                     if(isset($_SESSION['nao_autenticado'])):
                     ?>
                     <div class="notification is-danger">
@@ -20,28 +18,33 @@ include_once 'header.php';
                     endif;
                     unset($_SESSION['nao_autenticado']);
                     ?>
-                    <div class="box">
-                        <form action="login.php" method="POST">
-                            <div class="field">
-                                <div class="control">
-                                    <input name="email" type="text" class="input is-large" placeholder="Seu email" autofocus="">
-                                </div>
-                            </div>
-
-                            <div class="field">
-                                <div class="control">
-                                    <input name="senha" class="input is-large" type="password" placeholder="Sua senha">
-                                </div>
-                            </div>
-                            <button type="submit" class="button is-block is-link is-large is-fullwidth">Entrar</button>
-                            Ou
-                            <a href="cadastro.php">Cadastre-se</a>
-                        </form>
-                    </div>
-                </div>
-            </div>
+		<div class="login-content">
+			<form action="login.php" method="POST">
+				<img src="../../img/avatar.svg">
+				<h2 class="title">Bem Vindo!</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Email</h5>
+           		   		<input type="text" class="input" name="email" >
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Senha</h5>
+           		    	<input type="password" class="input" name="senha">
+            	   </div>
+            	</div>
+            	<a href="cadastro.php">Cadastre-se</a>
+            	<input type="submit" class="btn" value="Entrar">
+            </form>
         </div>
-    </section>
+    </div>
 <?php
 include_once 'footer.php';
 ?>
