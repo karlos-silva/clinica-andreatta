@@ -7,7 +7,32 @@ include_once 'header.php';
 	<div class="container">
 		<div class="img">
 			<img src="../../img/register.svg">
-		</div>
+        </div>
+        
+        <?php
+            if(isset($_SESSION['status_cadastro'])):
+        ?>
+        <div class="alerta sucesso">
+            <p>Cadastro efetuado!</p>
+            <p>Faça login informando o seu usuário e senha <a href="../../php/login php/index.php">aqui</a></p>
+        </div>
+        
+        <?php
+        endif;
+        unset($_SESSION['status_cadastro']);
+        ?>
+        <?php
+            if(isset($_SESSION['usuario_existe'])):
+        ?>
+        <div class="notification is-info">
+            <p>O usuário escolhido já existe. Informe outro e tente novamente.</p>
+        </div>
+        <?php
+        endif;
+        unset($_SESSION['usuario_existe']);
+        ?>
+
+
 		<div class="login-content">
 			<form action="cadastrar.php" method="POST">
 				<img src="../../img/avatar.svg">
@@ -36,7 +61,7 @@ include_once 'header.php';
            		   </div>
            		   <div class="div">
            		   		<h5>Email</h5>
-           		   		<input type="text" class="input" name="email" >
+           		   		<input type="email" class="input" name="email" >
            		   </div>
            		</div>
            		<div class="input-div pass">
@@ -45,7 +70,7 @@ include_once 'header.php';
            		   </div>
            		   <div class="div">
            		    	<h5>Senha</h5>
-           		    	<input type="password" class="input" name="senha">
+           		    	<input type="password" class="input" name="senha" maxlength="32">
             	   </div>
             	</div>
             	<input type="submit" class="btn" value="Cadastrar">

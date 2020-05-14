@@ -9,15 +9,15 @@ include_once 'header.php';
 			<img src="../../img/background-login.svg">
 		</div>
 		<?php
-                    if(isset($_SESSION['nao_autenticado'])):
-                    ?>
-                    <div>
-                      <p>ERRO: Email ou senha inválidos.</p>
-                    </div>
-                    <?php
-                    endif;
-                    unset($_SESSION['nao_autenticado']);
-                    ?>
+		if(isset($_SESSION['nao_autenticado'])):
+		?>
+		<div>
+			<p>ERRO: Email ou senha inválidos.</p>
+		</div>
+		<?php
+		endif;
+		unset($_SESSION['nao_autenticado']);
+		?>
 		<div class="login-content">
 			<form action="login.php" method="POST">
 				<img src="../../img/avatar.svg">
@@ -28,7 +28,7 @@ include_once 'header.php';
            		   </div>
            		   <div class="div">
            		   		<h5>Email</h5>
-           		   		<input type="text" class="input" name="email" >
+           		   		<input type="email" class="input" name="email" >
            		   </div>
            		</div>
            		<div class="input-div pass">

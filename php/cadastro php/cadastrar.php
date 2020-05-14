@@ -13,33 +13,34 @@ function clear($input) {
   return $var;
 
 }
-
+if(isset($_POST['nome'])){
 $nome = clear(trim($_POST['nome']));
 $sobrenome = clear(trim($_POST['sobrenome']));
 $email = clear(trim($_POST['email']));
 $senha = clear(trim(md5($_POST['senha'])));
 
 
-$sql = "SELECT count(*) AS total FROM usuário WHERE email = '$email'";
-$resultado = mysqli_query($connect, $sql);
-$row = mysqli_fetch_assoc($resultaddo);
 
-if($row['total'] == 1) {
+$sql = "SELECT codigo FROM usuario WHERE email = '$email'";
+$resultado = mysqli_query($connect, $sql);
+$row = mysqli_num_rows($resultado);
+
+if($row > 0) {
   $_SESSION['usuario_existe'] = true;
+  header('Location: cadastro.php');
+  exit();
+}else{
+  $sql = "INSERT INTO usuario (nome, sobrenome, email, senha, data_cadastro) VALUES ('$nome', '$sobrenome', '$email', '$senha', NOW())";
+  $resultado = mysqli_query($connect, $sql);
+
+  if($resultado === TRUE) {
+  $_SESSION['status_cadastro'] = true;
+  }
+
+  $connect->close();
+
   header('Location: cadastro.php');
   exit;
 }
-
-$sql = "INSERT INTO usuário (nome, sobrenome, email, senha, data_cadastro) VALUES ('$nome', '$sobrenome', '$email', '$senha', NOW())";
-$resultado = mysqli_query($connect, $sql);
-
-if($resultado === TRUE) {
-  $_SESSION['status_cadastro'] = true;
 }
-
-$connect->close();
-
-header('Location: cadastro.php');
-exit;
-
 ?>
