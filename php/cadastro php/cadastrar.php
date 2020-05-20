@@ -4,6 +4,13 @@ session_start();
 
 require_once '../server php/db_connect.php';
 
+if(empty($_POST['nome']) || empty($_POST['sobrenome']) || empty($_POST['email']) || empty($_POST['senha'])) {
+  $_SESSION['inf_incompletas'] = true;
+	header('Location: cadastro.php');
+	exit();
+}
+
+
 function clear($input) {
   global $connect;
   // sql injection

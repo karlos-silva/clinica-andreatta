@@ -8,7 +8,18 @@ include_once 'header.php';
 		<div class="img">
 			<img src="../../img/register.svg">
         </div>
-        
+        <?php
+            if(isset($_SESSION['inf_incompletas'])):
+				?>
+				
+				<div class="notification icon">
+      	<i class="far fa-check-circle"></i> 
+      	Informações Incompletas!
+    		</div>
+        <?php
+        endif;
+        unset($_SESSION['inf_incompletas']);
+        ?>
         <?php
             if(isset($_SESSION['status_cadastro'])):
         ?>

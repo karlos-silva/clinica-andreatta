@@ -224,3 +224,43 @@ a:hover{
 	}
 }
 
+.notification {
+  background-color: #292929;
+  border: 2px solid #333333;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-bottom: 10px;
+
+  animation: fadeIn 500ms ease-in-out;
+}
+
+.notification i {
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 14px;
+  top: 17px;
+}
+
+.icon {
+  padding-left: 40px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.box {
+	width: 450px;
+	height: 50px;
+}

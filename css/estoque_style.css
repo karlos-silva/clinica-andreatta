@@ -1,7 +1,14 @@
-body {
-  font-family: Arial;
- background-color: rgba(190, 196, 199, 0.623);
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
 
 nav img{
   width: 40px;
@@ -10,7 +17,7 @@ nav img{
 }
 
 nav {
-  background-color: #1e6495;
+  background-color: #FF6366;
   margin-bottom: 50px;
   font-weight: bolder;
 }
@@ -43,42 +50,6 @@ nav a:hover {
 }
 
 
-/*.split-left {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-  left: 0;
-  background-size: cover;
-  background-image: url("../img/background-login.png");
+.sair {
+  margin-right: 20px;
 }
-
-.split-right {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-  right: 0;
-  background-color:rgb(12, 70, 109);
-}
-
-
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.centered img {
-  width: 150px;
-  border-radius: 50%;
-}*/
