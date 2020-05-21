@@ -19,6 +19,8 @@
         <li><a href="../home_adm php/home.php">Home</a></li>
         <li><a href=""></a></li>
         <li class="active"><a href="estoque.php">Estoque</a></li>
+        <li><a href=""></a></li>
+        <li><a href="../adicionar_horarios/index.php">Adicionar Horarios</a></li>
       </ul>
     </div>
   </nav>

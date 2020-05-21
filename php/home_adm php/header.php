@@ -20,6 +20,8 @@
         <li  class="active"><a href="home.php">Home</a></li>
         <li><a href=""></a></li>
         <li><a href="../estoque php/estoque.php">Estoque</a></li>
+        <li><a href=""></a></li>
+        <li><a href="../adicionar_horarios/index.php">Adicionar Horarios</a></li>
       </ul>
     </div>
   </nav>
