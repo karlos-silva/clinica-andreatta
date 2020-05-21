@@ -33,7 +33,7 @@ $pesquisar = $_POST['pesquisar'];
         </tr>
       </thead>
       <?php
-        $sql = "SELECT * FROM item WHERE nome = '$pesquisar'";
+        $sql = "SELECT * FROM item WHERE nome = '$pesquisar' AND estatus = 0 ";
         $resultado = mysqli_query($connect, $sql);
 
       if (mysqli_num_rows($resultado) > 0) :

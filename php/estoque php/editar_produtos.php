@@ -7,7 +7,7 @@ include_once 'header.php';
 if(isset($_GET['codigo'])):
   $codigo = mysqli_escape_string($connect, $_GET['codigo']);
 
-  $sql = "SELECT * FROM item WHERE codigo = '$codigo'";
+  $sql = "SELECT * FROM item WHERE codigo = '$codigo' AND estatus = 0 ";
   $resultado = mysqli_query($connect, $sql);
   $dados = mysqli_fetch_array($resultado);
 endif;

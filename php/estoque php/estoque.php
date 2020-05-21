@@ -29,7 +29,7 @@ include_once 'message.php'
                         </tr>
                     </thead>
                     <?php
-                        $sql = "SELECT * FROM item";
+                        $sql = "SELECT * FROM item WHERE estatus = 0 ";
                         $resultado = mysqli_query($connect, $sql);
 
                         if(mysqli_num_rows($resultado) > 0):
