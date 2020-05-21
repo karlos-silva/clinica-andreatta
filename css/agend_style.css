@@ -1,0 +1,58 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+
+nav img{
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+nav {
+  background-color: #FF6366;
+  margin-bottom: 50px;
+  font-weight: bolder;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: none;
+
+}
+select {
+  display: block;
+}
+
+.table th {
+  border-top: none;
+}
+
+.input-pesquisar {
+  width: 40vw;
+  margin-bottom: 40px;
+
+}
+
+.btn-pesquisar {
+  margin-top: 20px;
+  margin-left: 10px;
+  position: absolute;
+
+}
+
+.input-add{
+  width: 80vw;
+}
+
+
+.sair {
+  margin-right: 20px;
+}

@@ -32,7 +32,7 @@ if($row == 0) {
 	while($array = mysqli_fetch_array($resultado)){
 		if($email == $array['email']){
 			session_start();
-			$_SESSION['email'] = $email;
+			$_SESSION['codigo'] = $array['codigo'];
 			header('Location: ../home php/home.php');
 			exit();
 		}else{
