@@ -22,6 +22,8 @@
         <li><a href="../estoque php/estoque.php">Estoque</a></li>
         <li><a href=""></a></li>
         <li><a href="../adicionar_horarios/index.php">Adicionar Horarios</a></li>
+        <li><a href=""></a></li>
+        <li><a href="../agenda_geral/index.php">Agenda Geral</a></li>
       </ul>
     </div>
   </nav>
