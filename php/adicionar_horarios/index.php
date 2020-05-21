@@ -11,7 +11,7 @@ include_once 'footer.php'
 				<div class="form-group">
 					<div class="col-sm-10">
 						<div class="input-group date data_formato" data-date-format="yyyy/mm/dd HH:ii:ss">
-							<input type="text" class="form-control" name="data" placeholder="Data da visita" style="width: 90%">
+							<input type="text" class="form-control" name="data" placeholder="Data/Horario da consulta" style="width: 90%">
 							<span class="input-group-addon">
                                 <span class="glyphicon glyphicon-th">
                                 <svg class="bi bi-calendar" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
