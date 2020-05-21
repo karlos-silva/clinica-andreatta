@@ -20,7 +20,7 @@ include_once 'footer.php'
     <option>Nenhum</option>
     <option>Unimed</option>
     <option>Amil</option>
-    <option>NoteDame</option>
+    <option>NotreDame</option>
     <option>Sul America</option>
     <option>Bradesco Saude</option>
     <option>Golden Cross</option>
