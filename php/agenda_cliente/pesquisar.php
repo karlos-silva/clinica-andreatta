@@ -1,10 +1,15 @@
 <?php
 
+session_start();
+if(!isset($_SESSION['codigo'])){
+    header('Location: ../logout/logout.php');
+}
+
 require_once '../server php/db_connect.php';
 
 include_once 'header.php';
 
-include_once 'message.php';
+
 
 $pesquisar = $_POST['pesquisar'];
 
@@ -33,7 +38,14 @@ $pesquisar = $_POST['pesquisar'];
        </tr>
       </thead>
       <?php
-        $sql = "SELECT * FROM horarios WHERE cliente = '$pesquisar'";
+        $codigo = $_SESSION['codigo'];
+        $sql = "SELECT * FROM usuario WHERE codigo = '$codigo'";
+        $result = mysqli_query($connect, $sql);
+        $dados = mysqli_fetch_array($result);
+        $nome = $dados['nome'];
+        $sobrenome = $dados['sobrenome'];
+        $completo = $nome . ' ' . $sobrenome;
+        $sql = "SELECT * FROM horarios  WHERE info LIKE '%{$pesquisar}%' AND estatus = 1 AND cliente = '$completo' ORDER BY `info`";
         $resultado = mysqli_query($connect, $sql);
 
       if (mysqli_num_rows($resultado) > 0) :
@@ -80,7 +92,7 @@ $pesquisar = $_POST['pesquisar'];
       ?>
     </table>
   </div>
-  <a href="index.php" class= "btn btn-info">Voltar</a>
+  
 
   <?php
   include_once 'footer.php'
