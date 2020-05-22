@@ -46,9 +46,9 @@
         <h2><i id="spaceText" class="fas fa-user-md"></i>Clínica Andreatta</h2>
       </div>
       <div class="texDiv-principal">
-        <label for=""><i id="spaceText">Com o proposito de gerenciar uma clínica médica, este MVP traz a solução para o problema.
-        Com possibilidade de cadastro, gerenciamento de estoque, agendamento de consultas, verificação de consultas já realizadas, busca
-        de receitas médica e consulta de histórico do paciente, todo o plano de negócio pertinente ao negócio está aqui.</i></label>
+        <label for=""><i id="spaceText">Com o propósito de gerenciar uma clínica médica, este MVP traz a solução para o problema.
+        Sendo possível realizar cadastro, gerenciamento de estoque, agendamento de consultas, verificação de consultas já realizadas, busca
+        de receitas médica e consulta de histórico do paciente, todo o plano de negócio pertinente está aqui.</i></label>
         
       </div>
     
