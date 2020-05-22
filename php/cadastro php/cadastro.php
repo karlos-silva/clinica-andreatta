@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include_once 'header.php';
 ?>
 	<img class="wave" src="../../img/wave-register.png">

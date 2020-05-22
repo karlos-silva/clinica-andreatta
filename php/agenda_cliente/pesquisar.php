@@ -32,7 +32,6 @@ $pesquisar = $_POST['pesquisar'];
       <thead>
       <tr>
         <th>Data</th>
-        <th>Cliente</th>
         <th>Consorcio</th>
         <th>Forma de pagamento</th>
        </tr>
@@ -54,7 +53,6 @@ $pesquisar = $_POST['pesquisar'];
       ?>
       <tr class="dados">
           <td><?php echo $dados['info'];?></td>
-          <td><?php echo $dados['cliente'];?></td>
           <td><?php echo $dados['consorcio'];?></td>
           <td><?php echo $dados['forma_pagamento'];?></td>
           <td>
@@ -81,7 +79,6 @@ $pesquisar = $_POST['pesquisar'];
       else : ?>
 
         <tr>
-          <td>-</td>
           <td>-</td>
           <td>-</td>
           <td>-</td>
