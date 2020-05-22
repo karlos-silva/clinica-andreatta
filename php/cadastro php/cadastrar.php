@@ -37,7 +37,7 @@ if($row > 0) {
   header('Location: cadastro.php');
   exit();
 }else{
-  $sql = "INSERT INTO usuario (nome, sobrenome, email, senha, data_cadastro) VALUES ('$nome', '$sobrenome', '$email', '$senha', NOW())";
+  $sql = "INSERT INTO usuario (nome, sobrenome, email, senha, data_cadastro, tipo) VALUES ('$nome', '$sobrenome', '$email', '$senha', NOW(),'visitante')";
   $resultado = mysqli_query($connect, $sql);
 
   if($resultado === TRUE) {

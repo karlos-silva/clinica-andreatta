@@ -12,7 +12,7 @@ $email = $_POST['email'];
 $senha = $_POST['senha'];
 
 
-$sql = "SELECT email FROM usuario WHERE email = '$email' AND senha = md5('$senha')";
+$sql = "SELECT * FROM usuario WHERE email = '$email' AND senha = md5('$senha')";
 
 
 $resultado = mysqli_query($connect, $sql);
@@ -31,10 +31,19 @@ if($row == 0) {
 	
 	while($array = mysqli_fetch_array($resultado)){
 		if($email == $array['email']){
-			session_start();
-			$_SESSION['codigo'] = $array['codigo'];
-			header('Location: ../home php/home.php');
-			exit();
+			if ($array['tipo'] == "visitante" or $array['tipo'] == "cliente"){
+				session_start();
+				$_SESSION['codigo'] = $array['codigo'];
+				header('Location: ../home_cliente php/home.php');
+				exit();
+			}
+			if ($array['tipo']== "secretaria"){
+				session_start();
+				$_SESSION['codigo'] = $array['codigo'];
+				header('Location: ../home_adm php/home.php');
+				exit();
+			}
+			
 		}else{
 			header('Location: index.php');
 		}
