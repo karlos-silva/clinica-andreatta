@@ -29,6 +29,8 @@
         <li><a href="../adicionar_horarios/index.php">Adicionar Horarios</a></li>
         <li><a href=""></a></li>
         <li><a href="../agenda_geral/index.php">Agenda Geral</a></li>
+        <li><a href=""></a></li>
+        <li><a href="../cadastro_secretaria php/cadastro.php">Cadastrar Secretaria</a></li>
       </ul>
     </div>
   </nav>
