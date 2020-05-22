@@ -1,5 +1,8 @@
 <?php
 session_start();
+if(!isset($_SESSION['codigo'])){
+    header('Location: ../logout/logout.php');
+}
 require_once '../server php/db_connect.php';
 $sql = "SELECT * FROM horarios WHERE estatus = 0";
 $resultado = mysqli_query($connect, $sql);

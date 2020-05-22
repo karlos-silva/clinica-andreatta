@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 require_once '../server php/db_connect.php';
 
 if(empty($_POST['email']) || empty($_POST['senha'])) {

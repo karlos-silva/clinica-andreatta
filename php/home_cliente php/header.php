@@ -30,9 +30,12 @@
           <li class="nav-item">
             <a class="nav-link" href="../consulta php/index.php">Marcar Consulta</a>
           </li>
+          <li class="nav-item">
+          <a class="nav-link" href="../agenda_cliente/index.php">Consultas Marcadas</a>
+        </li>
         </ul>
       </div>
-      <a href="logout.php" ><i class="fas fa-sign-out-alt sair right"></i></a>
+      <a href="../logout/logout.php" ><i class="fas fa-sign-out-alt sair right"></i></a>
 </nav>
 
   

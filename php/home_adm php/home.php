@@ -1,6 +1,8 @@
 <?php
-
 session_start();
+if(!isset($_SESSION['codigo'])){
+    header('Location: ../logout/logout.php');
+}
 
 require_once '../server php/db_connect.php';
 

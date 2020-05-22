@@ -1,11 +1,13 @@
 <?php
-
+session_start();
+if(!isset($_SESSION['codigo'])){
+    header('Location: ../logout/logout.php');
+}
 
 require_once '../server php/db_connect.php';
 
 include_once 'header.php';
 
-include_once 'message.php'
 ?>
 
         <div class="container">
@@ -23,13 +25,19 @@ include_once 'message.php'
                     <thead>
                          <tr>
                             <th>Data</th>
-                            <th>Cliente</th>
                             <th>Consorcio</th>
                             <th>Forma de pagamento</th>
                         </tr>
                     </thead>
                     <?php
-                        $sql = "SELECT * FROM horarios  WHERE estatus = 1  ORDER BY `info`";
+                        $codigo = $_SESSION['codigo'];
+                        $sql = "SELECT * FROM usuario WHERE codigo = '$codigo'";
+                        $result = mysqli_query($connect, $sql);
+                        $dados = mysqli_fetch_array($result);
+                        $nome = $dados['nome'];
+                        $sobrenome = $dados['sobrenome'];
+                        $completo = $nome . ' ' . $sobrenome;
+                        $sql = "SELECT * FROM horarios  WHERE estatus = 1 AND cliente = '$completo' ORDER BY `info`";
                         $resultado = mysqli_query($connect, $sql);
 
                         if(mysqli_num_rows($resultado) > 0):
@@ -38,7 +46,6 @@ include_once 'message.php'
                         ?>
                         <tr class="dados">
                             <td><?php echo $dados['info'];?></td>
-                            <td><?php echo $dados['cliente'];?></td>
                             <td><?php echo $dados['consorcio'];?></td>
                             <td><?php echo $dados['forma_pagamento'];?></td>
                             <td>
