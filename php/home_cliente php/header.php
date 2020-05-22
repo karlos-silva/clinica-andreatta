@@ -13,13 +13,47 @@
     <title>Clinica Andreatta</title>
   </head>
   <body>
-  <nav>
-    <div class="nav-wrapper">
+
+ 
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #CC281D">
+
+      <a class="navbar-brand brand"  href="#"><img src="../../img/logo.png" alt=""> Andreatta</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="home.php">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../consulta php/index.php">Marcar Consulta</a>
+          </li>
+        </ul>
+      </div>
       <a href="logout.php" ><i class="fas fa-sign-out-alt sair right"></i></a>
-      <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li  class="active"><a href="home.php">Home</a></li>
-        <li><a href=""></a></li>
-        <li><a href="../consulta php/index.php">Marcar Consulta</a></li>
-      </ul>
-    </div>
-  </nav>
+</nav>
+
+  
+  <div class="backgroundImage">
+      <img class = "backgoundUnfocused" alt="Backgound Unfocused" src="../../img/background.jpg" >
+      <div class="doctor-image">
+          <img class="wave-image" src="../../img/doctor.png" alt="">
+      </div>
+
+      <div class="textDiv">
+        <h2><i id="spaceText" class="fas fa-user-md"></i>Clínica Andreatta</h2>
+      </div>
+      <div class="texDiv-principal">
+        <label for=""><i id="spaceText">Com o proposito de gerenciar uma clínica médica, este MVP traz a solução para o problema.
+        Com possibilidade de cadastro, gerenciamento de estoque, agendamento de consultas, verificação de consultas já realizadas, busca
+        de receitas médica e consulta de histórico do paciente, todo o plano de negócio pertinente ao negócio está aqui.</i></label>
+        
+      </div>
+    
+      
+  </div>
+
+
+  </body>

@@ -17,17 +17,66 @@ nav img{
 }
 
 nav {
-  background-color: #FF6366;
+  background-color: red;
   margin-bottom: 50px;
   font-weight: bolder;
+  color: black;
+  
 }
 
 nav a:hover {
-  color: white;
+  color: rgb(146, 39, 39);
   text-decoration: none;
 }
 
-
 .sair {
   margin-right: 20px;
+}
+
+.backgoundUnfocused{
+  width: 100%;
+  position: relative;
+  height: 60%;
+  bottom: 50px;
+}
+.backgound-image{
+  position: relative;
+}
+
+.doctor-image{
+  z-index: 200;
+  position: relative;
+  width: 30%;
+  height: 30%;
+  bottom: 500px
+}
+
+.a{
+  background-color: black;
+}
+
+.textDiv{
+  position: absolute;
+  top: 300;
+  left: 400;
+  color: black;
+  
+}
+
+.texDiv-principal{
+  position: absolute;
+  top: 400;
+  left: 490;
+  color: rgb(58, 0, 124);
+  font-family: 'Quicksand', sans-serif;
+}
+#spaceText{
+  position: relative;
+  font-size: 25px;
+  max-width: 50px;
+  color: rgb(75, 70, 70);
+}
+
+.texDiv-principal{
+  max-width: 700px;
 }
