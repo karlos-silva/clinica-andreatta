@@ -17,7 +17,7 @@
  
   <nav class="navbar navbar-expand-lg navbar-light">
 
-      <a class="navbar-brand brand"  href="#"><img src="../../img/logo.png" alt=""> Andreatta</a>
+      <a class="navbar-brand brand"  href="#"><img src="../../img/logo.ico" alt=""> Andreatta</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,27 +36,42 @@
         </ul>
       </div>
       <a href="../logout/logout.php" ><i class="fas fa-sign-out-alt sair right"></i></a>
-</nav>
+  </nav>
 
-  
-  <div class="backgroundImage">
-      <img class = "backgoundUnfocused" alt="Backgound Unfocused" src="../../img/background.jpg" >
-      <div class="doctor-image">
-          <img class="wave-image" src="../../img/doctor.png" alt="">
-      </div>
+  <main class="principal">
+        <div class="sobre-oftalmo">
+          <div class="alinha-texto">
+              <i class="fas fa-eye fa-3x"></i>
+              <h2 class="titulo">Sobre Oftalmologia</h2 class="titulo">
+          </div>
+            <p>A oftalmologia é uma especialidade médica que investiga, estuda, diagnostica e trata as 
+            doenças relacionadas com os olhos, com a visão e estruturas afins, tais como: astigmatismo,
+            ambliopia, catarata, degeneração macular, toxoplasmose e tumores oculares, pterígio, etc</p>
+        </div>
 
-      <div class="textDiv">
-        <h2><i id="spaceText" class="fas fa-user-md"></i>Clínica Andreatta</h2>
-      </div>
-      <div class="texDiv-principal">
-        <label for=""><i id="spaceText">Com o propósito de gerenciar uma clínica médica, este MVP traz a solução para o problema.
-        Sendo possível realizar cadastro, gerenciamento de estoque, agendamento de consultas, verificação de consultas já realizadas, busca
-        de receitas médica e consulta de histórico do paciente, todo o plano de negócio pertinente está aqui.</i></label>
-        
-      </div>
-    
-      
-  </div>
+        <div class="about-us">
+          <div class="alinha-texto">
+              <i class="fas fa-users fa-3x"></i>
+              <h2 class="titulo">Time de Desenvolvimento</h2 class="titulo">
+          </div>
+            <p> Karlos Eduardo</br>
+                Denis Oliveira</br>
+                Bernardo Andreatta
+            </p>
+        </div>
+        <div class="contato">
+          <div class="alinha-texto">
+            <i class="fas fa-map-marker-alt fa-3x fa-pull-center"></i>
+            <h2 class="titulo">Contato</h2 class="titulo">
+          </div>
+            <p>R. Imac. Conceição, 1155 - Prado Velho, Curitiba - PR, 80215-901</p>
 
 
-  </body>
+        </div>
+
+  </main>
+
+
+
+
+</body>
