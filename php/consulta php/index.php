@@ -11,14 +11,14 @@ include_once 'footer.php'
 ?>
 <div class="container">
 <form method="POST">
-<h5>Escolha uma data/hora disponivel</h5>
+<h6>Escolha uma data/hora disponivel</h6>
 <select name="Vagas" id="Vagas">
     <option>-</option>
     <?php while($row = mysqli_fetch_array($resultado)):;?>
     <option><?php echo $row[0];?></option>
     <?php endwhile;?>
 </select>
-<h5>Possui algum plano de saude?</h5>
+<h6>Possui algum plano de saude?</h6>
 <select name="Consorcio" id="Consorcio">
     <option>Nenhum</option>
     <option>Unimed</option>
@@ -28,7 +28,7 @@ include_once 'footer.php'
     <option>Bradesco Saude</option>
     <option>Golden Cross</option>
 </select>
-<h5>Como ira efetuar o pagamento?</h5>
+<h6>Como ira efetuar o pagamento?</h6>
 <select name="pag" id="pag">
     <option>-</option>
     <option>Presencial</option>
