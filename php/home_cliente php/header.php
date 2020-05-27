@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/home_style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -37,8 +38,13 @@
       </div>
       <a href="../logout/logout.php" ><i class="fas fa-sign-out-alt sair right"></i></a>
   </nav>
+  <div class="texto-logo">
+      <span>Clínica Andreatta</span>
+      <p>Especialista em oftalmologia</p>
+  </div>
 
   <main class="principal">
+        
         <div class="sobre-oftalmo">
           <div class="alinha-texto">
               <i class="fas fa-eye fa-3x"></i>
@@ -62,7 +68,7 @@
         <div class="contato">
           <div class="alinha-texto">
             <i class="fas fa-map-marker-alt fa-3x fa-pull-center"></i>
-            <h2 class="titulo">Contato</h2 class="titulo">
+            <h2 class="titulo">Endereço</h2 class="titulo">
           </div>
             <p>R. Imac. Conceição, 1155 - Prado Velho, Curitiba - PR, 80215-901</p>
 
