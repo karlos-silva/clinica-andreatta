@@ -13,8 +13,7 @@ include_once 'header.php';
     <div class="row ">
         <form action="pesquisar.php" method="POST">
             <div class="input-field input-pesquisar ">
-                <input id="last_name" type="text" class="validate" name="pesquisar">
-                <label for="last_name">Pesquisar</label>
+                <input id="last_name" type="text" class="validate" name="pesquisar" placeholder="Pesquisar">              
                 <button type="submit" class=" btn btn-pesquisar" name="btn-pesquisar" id=" btn btn-pesquisar">Pesquisar</button>
             </div>
             
@@ -50,7 +49,7 @@ include_once 'header.php';
                     <div id="modal<?php echo $dados['codigo']; ?>" class="modal">
                         <div class="modal-content">
                         <h4>Opa!</h4>
-                        <p>Tem certeza que deseja deletar essa Ficha?</p>
+                        <p>Tem certeza que deseja deletar essa Ficha Médica?</p>
                         </div>
                         <div class="modal-footer">
                             <form action="delete.php" method="POST">
