@@ -43,6 +43,11 @@
         
     </tr>
     <tr>
+            <th>Alergia: </th>
+            <th><label><?php echo $dados['alergia'] ?></label></th>
+        
+    </tr>
+    <tr>
             <th>Grau:</th>
             <th><label><?php echo $dados['grau'] ?></label></th>
     </tr>
