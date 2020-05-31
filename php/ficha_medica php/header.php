@@ -27,7 +27,7 @@
         <li><a href=""></a></li>
         <li><a href="../cadastro_secretaria php/cadastro.php">Cadastrar Secretaria</a></li>
         <li><a href=""></a></li>
-        <li><a href="../ficha_medica php/index.php">Ficha medica</a></li>
+        <li><a href="../cadastro php/fichaMedica.php">Ficha medica</a></li>
       </ul>
     </div>
   </nav>
