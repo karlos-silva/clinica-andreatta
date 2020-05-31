@@ -5,5 +5,28 @@
 }
 
 body{
-    background-image: url("../img/medica.png");
+	background-image: url("../img/medica.png");
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+	  background-position: right top;
+	  background-size: 1200px;
+}
+select{
+width: 60%;
+border: 1px solid black;
+margin-top: 10px;
+}
+button{
+	margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+}
+.container{
+	padding: 10px;
 }
