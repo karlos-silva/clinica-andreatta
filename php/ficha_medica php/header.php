@@ -17,6 +17,7 @@
     <div class="nav-wrapper">
       <a href="../logout/logout.php" ><i class="fas fa-sign-out-alt sair right"></i></a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <link rel="stylesheet" href="../../css/expandir_style.css">
         <li  class="active"><a href="home.php">Home</a></li>
         <li><a href=""></a></li>
         <li><a href="../estoque php/estoque.php">Estoque</a></li>

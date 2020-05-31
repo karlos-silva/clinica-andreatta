@@ -1,0 +1,43 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+table {
+    border-spacing: 5px;
+}
+
+
+label{
+    font-family: Indie Flower, serif;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    font-style: oblique;
+    font-size: 20px;
+}
+
+th{
+    color: rgb(77, 30, 30);
+}
+
+.container-informacoes{
+    background-color: rgb(194, 182, 182);
+    max-width: 900px;
+    margin: 100px auto 200px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+
+
+p{
+    color: black;
+    font-size: 25px;
+}

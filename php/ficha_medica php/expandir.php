@@ -9,7 +9,7 @@
     include_once 'header.php';
 ?>
 
-Medico: Marcos Andreatta
+
 
 <?php
     if(isset($_GET['codigo'])):
@@ -22,3 +22,40 @@ Medico: Marcos Andreatta
 
    
 ?>
+
+
+<div class="container-informacoes">
+<table class="table">
+
+<table class="table">
+    <tr>
+        <th>Médico:</th> 
+        <th> <label>Dr Marcos Andreatta </label> </th>
+    </tr>
+    <tr>
+            <th>Nome Paciente:</th>
+            <th><label><?php echo $dados['nome'] ?></label></th>
+        
+    </tr>
+    <tr>
+            <th>Tipo sanguíneo: </th>
+            <th><label><?php echo $dados['tipo_sanguineo'] ?></label></th>
+        
+    </tr>
+    <tr>
+            <th>Grau:</th>
+            <th><label><?php echo $dados['grau'] ?></label></th>
+    </tr>
+    <tr>
+            <th>Deficiência Visual: </th>
+            <th><label><?php echo $dados['def_visual'] ?></label></th>
+    </tr>
+    <tr>
+            <th>Observações: </th>
+            <th><label><?php echo $dados['obs'] ?></label></th>
+    </tr>
+</table>
+
+</table>
+
+</div>
