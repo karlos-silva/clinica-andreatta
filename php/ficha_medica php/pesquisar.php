@@ -23,7 +23,7 @@ $pesquisar = $_POST['pesquisar'];
       <table class="table">
           <thead>
               <tr>
-                  <th>Referente à</th>
+                  <th>Nome do Paciente</th>
               </tr>
           </thead>
           <?php

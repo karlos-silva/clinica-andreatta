@@ -19,10 +19,10 @@ include_once 'header.php';
             
         </form>
         
-        <table class="table">
+        <table class="table-ficha">
             <thead>
                 <tr>
-                    <th>Referente à</th>
+                    <th>Nome do Paciente</th>
                 </tr>
             </thead>
             <?php
@@ -39,7 +39,7 @@ include_once 'header.php';
                 ?>
                 <tr class="dados">
                     <td><?php echo $dados['nome'];?></td>
-                    <td>
+                    <td class='opcoes-ficha'>
                         <a href="expandir.php?codigo=<?php echo $dados['codigo'];?>" class="btn btn-info "><i >Expandir</i></a>
                         <a href="editar_dados.php?codigo=<?php echo $dados['codigo'];?>" class="btn btn-info "><i class="material-icons">edit</i></a>
                         <a href="#modal<?php echo $dados['codigo']; ?>" class="btn red modal-trigger"><i class="material-icons">delete</i></a>
@@ -49,7 +49,7 @@ include_once 'header.php';
                     <div id="modal<?php echo $dados['codigo']; ?>" class="modal">
                         <div class="modal-content">
                         <h4>Opa!</h4>
-                        <p>Tem certeza que deseja deletar essa Ficha Médica?</p>
+                        <p>Tem certeza que deseja deletar essa Ficha?</p>
                         </div>
                         <div class="modal-footer">
                             <form action="delete.php" method="POST">

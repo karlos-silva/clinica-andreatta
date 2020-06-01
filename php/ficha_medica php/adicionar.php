@@ -8,15 +8,25 @@ require_once '../server php/db_connect.php';
 include_once 'footer.php';
 ?>
 
-<div class="container">
-  <form method="POST">
-  <div class="row">
-      <div class="input-field input-add">
-        <input type="text" class="validade" name="nome">
-        <label for="Nome">Nome do Paciente</label>
-      </div>
-    </div>
+olá
+<div class="row">
+    <div class="input-field input-add">
+        <label for="Nome paciente">Nome do Paciente</label>
+        <select name="select-nome" >
+              <option value="Escolha">Escolha um paciente</option>
+              <?php
+              $sql = "SELECT * FROM usuario WHERE tipo = 'visitante' ";
+              $resultado = mysqli_query($connect, $sql);
+              while($dados = mysqli_fetch_array($resultado)){
+                    $nome = $dados['nome'];
+                    echo "<option name = 'nome' value = '$nome'> $nome</option>";
+              }
+                ?>
+        </select> 
+    </div>      
+</div>
 
+    
   <div class="row">
       <div class="input-field input-add">
         <input type="text" class="validade" name="grau">
@@ -68,10 +78,7 @@ if(isset($_POST['submit'])){
     $sql = "INSERT INTO fichamedica (nome ,grau ,def_visual ,tipo_sanguineo ,alergia ,obs) VALUES ('$nome','$grau' ,'$def_visual' ,'$tipo_sanguineo' ,'$alergia', '$obs')";
     mysqli_query($connect, $sql);
     header('Location: index.php');
-
-
-
-    
+  
 }
 
 ?>

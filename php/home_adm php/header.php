@@ -28,6 +28,8 @@
         <li><a href="../cadastro_secretaria php/cadastro.php">Cadastrar Secretaria</a></li>
         <li><a href=""></a></li>
         <li><a href="../ficha_medica php/index.php">Ficha medica</a></li>
+        <li><a href=""></a></li>
+        <li><a href="../receita php/index.php">Receita Médica</a></li>
       </ul>
     </div>
   </nav>
