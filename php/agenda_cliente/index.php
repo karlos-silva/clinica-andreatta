@@ -31,13 +31,7 @@ include_once 'header.php';
                     </thead>
                     <?php
                         $codigo = $_SESSION['codigo'];
-                        $sql = "SELECT * FROM usuario WHERE codigo = '$codigo'";
-                        $result = mysqli_query($connect, $sql);
-                        $dados = mysqli_fetch_array($result);
-                        $nome = $dados['nome'];
-                        $sobrenome = $dados['sobrenome'];
-                        $completo = $nome . ' ' . $sobrenome;
-                        $sql = "SELECT * FROM horarios  WHERE estatus = 1 AND cliente = '$completo' ORDER BY `info`";
+                        $sql = "SELECT * FROM horarios  WHERE estatus = 1 AND usuario_codigo = '$codigo' ORDER BY `info`";
                         $resultado = mysqli_query($connect, $sql);
 
                         if(mysqli_num_rows($resultado) > 0):
