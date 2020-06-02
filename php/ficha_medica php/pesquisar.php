@@ -27,8 +27,6 @@ $pesquisar = $_POST['pesquisar'];
               </tr>
           </thead>
           <?php
-              
-      
               $sql = "SELECT * FROM fichamedica WHERE nome LIKE '%{$pesquisar}%'";
               $resultado = mysqli_query($connect, $sql);
 

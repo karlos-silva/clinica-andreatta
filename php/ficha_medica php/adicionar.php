@@ -91,16 +91,27 @@ if(isset($_POST['submit'])){
     $tipo_sanguineo = $_POST['tipo_sanguineo'];
     $alergia = $_POST['alergia'];
     $obs = $_POST['obs'];
-    $sql = "INSERT INTO fichamedica (nome ,grau ,def_visual ,tipo_sanguineo ,alergia ,obs, usuario_codigo) VALUES ('$nome_escolhido','$grau' ,'$def_visual' ,'$tipo_sanguineo' ,'$alergia', '$obs', '$codigo')";
+
+    if( $nome_escolhido == null or $grau == null or $def_visual == null or $tipo_sanguineo == null or $alergia == null or $obs == null){
+      echo '<script type="text/javascript">';
+                echo ' alert("Todos os campos precisam ser preenchidos!")';
+                echo '</script>';
+    }else{
+      $sql = "INSERT INTO fichamedica (nome ,grau ,def_visual ,tipo_sanguineo ,alergia ,obs, usuario_codigo) VALUES ('$nome_escolhido','$grau' ,'$def_visual' ,'$tipo_sanguineo' ,'$alergia', '$obs', '$codigo')";
 
   
-    if (mysqli_query($connect, $sql)) {
-      $sql = "UPDATE usuario SET tipo = 'cliente' WHERE codigo = '$codigo' ";
-      mysqli_query($connect, $sql);
-      header('LOCATION: index.php');
-   } else {
-      echo "Erro: " . $sql . "" . mysqli_error($connect);
-   }
-   $connect->close();
-}
+      if (mysqli_query($connect, $sql)) {
+        $sql = "UPDATE usuario SET tipo = 'cliente' WHERE codigo = '$codigo' ";
+        mysqli_query($connect, $sql);
+        header('LOCATION: index.php');
+       
+     } else {
+        echo "Erro: " . $sql . "" . mysqli_error($connect);
+     }
+     $connect->close();
+    }
+    
+
+    }
+ 
 
