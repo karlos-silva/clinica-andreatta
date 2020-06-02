@@ -26,20 +26,16 @@ include_once 'header.php';
                 </tr>
             </thead>
             <?php
-               
-               
-                $sql = "SELECT * FROM fichaMedica  WHERE estatus = 0 ORDER BY `nome` ";
-                $resultado = mysqli_query($connect, $sql);
+            $sql = "SELECT * FROM fichaMedica  WHERE estatus = 0";
+            $resultado = mysqli_query($connect, $sql);
 
-                if(mysqli_num_rows($resultado) > 0):
+            if(mysqli_num_rows($resultado) > 0):
 
-                    while($dados = mysqli_fetch_array($resultado)):
-
-
-                ?>
-                <tr class="dados">
+            while($dados = mysqli_fetch_array($resultado)):
+            ?>
+            <tr class="dados">
                     <td><?php echo $dados['nome'];?></td>
-                    <td class='opcoes-ficha'>
+                    <td>
                         <a href="expandir.php?codigo=<?php echo $dados['codigo'];?>" class="btn btn-info "><i >Expandir</i></a>
                         <a href="editar_dados.php?codigo=<?php echo $dados['codigo'];?>" class="btn btn-info "><i class="material-icons">edit</i></a>
                         <a href="#modal<?php echo $dados['codigo']; ?>" class="btn red modal-trigger"><i class="material-icons">delete</i></a>
@@ -59,8 +55,8 @@ include_once 'header.php';
                             </form>
                         </div>
                     </div>
-                    
-                </tr>
+                
+            </tr>
             <?php endwhile; 
             else: ?>
 
@@ -76,5 +72,8 @@ include_once 'header.php';
             ?>
         </table>
 </div>
-    <a href="adicionar.php" class= "btn btn-info">Adicionar</a>
+        <a href="adicionar.php" class= "btn btn-info">Adicionar</a>
         
+<?php
+include_once 'footer.php'
+?>
