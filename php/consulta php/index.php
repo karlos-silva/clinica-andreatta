@@ -44,6 +44,12 @@ if(isset($_POST['submit'])){
     $pagamento = $_POST['pag'];
     $consorcio = $_POST['Consorcio'];
     $codigo = $_SESSION['codigo'];
+    $sql = "SELECT * FROM usuario WHERE codigo = '$codigo'";
+    $result = mysqli_query($connect, $sql);
+    $info = mysqli_fetch_array($result);
+    $nome = $info['nome'];
+    $sobrenome = $info['sobrenome'];
+    $completo = $nome . ' ' . $sobrenome;
     if ($selecionar != "-"){
             if ($pagamento != "-"){
                 $sql = "UPDATE horarios SET estatus = '1' WHERE info = '$selecionar'";
@@ -53,6 +59,8 @@ if(isset($_POST['submit'])){
                 $sql = "UPDATE horarios SET forma_pagamento = '$pagamento' WHERE info = '$selecionar'";
                 mysqli_query($connect, $sql);
                 $sql = "UPDATE horarios SET usuario_codigo = '$codigo' WHERE info = '$selecionar'";
+                mysqli_query($connect, $sql);
+                $sql = "UPDATE horarios SET nome = '$completo' WHERE info = '$selecionar'";
                 mysqli_query($connect, $sql);
             }
             else{  
