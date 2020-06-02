@@ -38,7 +38,7 @@ $pesquisar = $_POST['pesquisar'];
        </tr>
       </thead>
       <?php
-        $sql = "SELECT * FROM horarios WHERE cliente LIKE '%{$pesquisar}%'";
+        $sql = "SELECT * FROM horarios WHERE info LIKE '%{$pesquisar}%' AND estatus = '1'";
         $resultado = mysqli_query($connect, $sql);
 
       if (mysqli_num_rows($resultado) > 0) :
@@ -47,7 +47,17 @@ $pesquisar = $_POST['pesquisar'];
       ?>
       <tr class="dados">
           <td><?php echo $dados['info'];?></td>
-          <td><?php echo $dados['cliente'];?></td>
+          <td><?php 
+              $codigo = $dados['usuario_codigo'];
+              $sql = "SELECT * FROM usuario WHERE codigo = '$codigo'";
+              $result = mysqli_query($connect, $sql);
+              $info = mysqli_fetch_array($result);
+              $nome = $info['nome'];
+              $sobrenome = $info['sobrenome'];
+              $completo = $nome . ' ' . $sobrenome;
+              echo $completo;
+              ?>
+          </td>
           <td><?php echo $dados['consorcio'];?></td>
           <td><?php echo $dados['forma_pagamento'];?></td>
           <td>
