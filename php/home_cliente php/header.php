@@ -34,6 +34,9 @@
           <li class="nav-item">
           <a class="nav-link" href="../agenda_cliente/index.php">Consultas Marcadas</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../lista_receita php/index.php">Receitas medicas</a>
+        </li>
         </ul>
       </div>
       <a href="../logout/logout.php" ><i class="fas fa-sign-out-alt sair right"></i></a>
