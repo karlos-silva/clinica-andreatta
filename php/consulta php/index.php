@@ -63,6 +63,7 @@ if(isset($_POST['submit'])){
                 mysqli_query($connect, $sql);
                 $sql = "UPDATE horarios SET nome = '$completo' WHERE info = '$selecionar'";
                 mysqli_query($connect, $sql);
+                header('LOCATION: ../agenda_cliente/index.php');
             }
             if ($pagamento == "Cartao" and $consorcio == "Nenhum"){
                 $sql = "UPDATE horarios SET estatus = '1' WHERE info = '$selecionar'";
