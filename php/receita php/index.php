@@ -10,10 +10,10 @@ include_once 'footer.php';
 ?>
 <form action="" method="POST">
     <div class="container">
-        <select name="select-nome">
+        <select name="nome-escolhido">
         <label for="exampleFormControlTextarea1" >Nome paciente</label>
                 <?php
-         $sql = "SELECT * FROM usuario WHERE tipo = 'visitante' ";
+         $sql = "SELECT * FROM usuario WHERE tipo = 'cliente' ";
          $resultado = mysqli_query($connect, $sql);
    
            while($dados = mysqli_fetch_array($resultado)){
@@ -38,8 +38,17 @@ include_once 'footer.php';
 
 <?php
  if(isset($_POST['submit'])){
+    $nome_escolhido = $_POST['nome-escolhido'];
+    $pedaco = explode(" ", $nome_escolhido);
+    $nome = $pedaco[0];
+    $sobrenome = $pedaco[1];
+    $sql = "SELECT * FROM usuario WHERE nome = '$nome' AND sobrenome = '$sobrenome'";
+    $result = mysqli_query($connect, $sql);
+    $info = mysqli_fetch_array($result); 
+    $codigo = $info['codigo'];
     $receita = $_POST['receita'];
-    $sql = "INSERT INTO receita (informacoes) VALUE ('Banana')";
+    $sql = "INSERT INTO receita (informacoes, usuario_codigo) VALUES ('$receita', '$codigo')";
+
     mysqli_query($connect, $sql);
 }
 
