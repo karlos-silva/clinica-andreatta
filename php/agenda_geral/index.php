@@ -40,7 +40,17 @@ include_once 'header.php';
                         ?>
                         <tr class="dados">
                             <td><?php echo $dados['info'];?></td>
-                            <td><?php echo $dados['cliente'];?></td>
+                            <td><?php 
+                                $codigo = $dados['usuario_codigo'];
+                                $sql = "SELECT * FROM usuario WHERE codigo = '$codigo'";
+                                $result = mysqli_query($connect, $sql);
+                                $info = mysqli_fetch_array($result);
+                                $nome = $info['nome'];
+                                $sobrenome = $info['sobrenome'];
+                                $completo = $nome . ' ' . $sobrenome;
+                                echo $completo;
+                                ?>
+                            </td>
                             <td><?php echo $dados['consorcio'];?></td>
                             <td><?php echo $dados['forma_pagamento'];?></td>
                             <td>
