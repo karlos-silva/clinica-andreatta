@@ -101,7 +101,7 @@ if(isset($_POST['submit'])){
 
   
       if (mysqli_query($connect, $sql)) {
-        $sql = "UPDATE usuario SET tipo = 'cliente' WHERE codigo = '$codigo' ";
+        $sql = "UPDATE usuario SET tipo = 'cliente1' WHERE codigo = '$codigo' ";
         mysqli_query($connect, $sql);
         header('LOCATION: index.php');
        

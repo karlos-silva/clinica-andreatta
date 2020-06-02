@@ -25,10 +25,13 @@
           <a class="nav-link" href="../home_cliente php/home.php">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../consulta php/index.php">Marcar Consulta</a>
+            <a class="nav-link" href="../consulta php/index.php">Marcar Consulta</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="../agenda_cliente/index.php">Consultas Marcadas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../agenda_cliente/index.php">Consultas Marcadas</a>
+          <a class="nav-link" href="../lista_receita php/index.php">Receitas medicas</a>
         </li>
       </ul>
     </div>

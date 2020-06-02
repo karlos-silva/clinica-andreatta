@@ -31,10 +31,16 @@ if($row == 0) {
 	
 	while($array = mysqli_fetch_array($resultado)){
 		if($email == $array['email']){
-			if ($array['tipo'] == "visitante" or $array['tipo'] == "cliente"){
+			if ($array['tipo'] == "visitante" or $array['tipo'] == "cliente2"){
 				session_start();
 				$_SESSION['codigo'] = $array['codigo'];
 				header('Location: ../home_cliente php/home.php');
+				exit();
+			}
+			if ($array['tipo'] == "cliente1"){
+				session_start();
+				$_SESSION['codigo'] = $array['codigo'];
+				header('Location: ../completar_cad php/index.php');
 				exit();
 			}
 			if ($array['tipo']== "secretaria"){
