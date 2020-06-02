@@ -34,7 +34,7 @@ include_once 'header.php';
                 if(mysqli_num_rows($resultado) > 0):
 
                     while($dados = mysqli_fetch_array($resultado)):
-                       
+
 
                 ?>
                 <tr class="dados">

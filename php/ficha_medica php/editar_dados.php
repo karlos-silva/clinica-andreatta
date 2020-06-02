@@ -54,6 +54,7 @@ endif;
         <input type="text" name="alergia" value="<?php echo $dados['alergia'];?>">
        
       </div>
+      <button type="submit" name="submit" class="btn btn-primary"> Atualizar </button>
     </div>
 
     <div class="row">
@@ -61,9 +62,11 @@ endif;
         <label for="Observacoes">Observações</label>
         <textarea type="text" name="obs"><?php echo $dados['obs'];?>"</textarea>>
         
+        
       </div>
     </div>
-    <button type="submit" name="submit" class="btn btn-primary"> Atualizar </button>
+    
+    
   </form>
 </div>
 
