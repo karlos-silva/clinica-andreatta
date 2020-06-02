@@ -37,6 +37,9 @@
         <li class="nav-item">
           <a class="nav-link" href="../lista_receita php/index.php">Receitas medicas</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../feedback php/index.php">FeedBack da Consulta</a>
+        </li>
         </ul>
       </div>
       <a href="../logout/logout.php" ><i class="fas fa-sign-out-alt sair right"></i></a>

@@ -7,7 +7,7 @@ require_once '../server php/db_connect.php';
 $sql = "SELECT * FROM horarios WHERE estatus = 0";
 $resultado = mysqli_query($connect, $sql);
 include_once 'header.php';
-include_once 'footer.php'
+include_once 'footer.php';
 ?>
 <div class="container">
 <form method="POST">

@@ -29,6 +29,8 @@
         <li><a href="../ficha_medica php/index.php">Ficha medica</a></li>
         <li><a href=""></a></li>
         <li><a href="../receita php/index.php">Receita Médica</a></li>
+        <li><a href=""></a></li>
+        <li><a href="../lista_feedback php/index.php">Feedback dos Clientes</a></li>
       </ul>
     </div>
   </nav>
