@@ -44,7 +44,7 @@ $pesquisar = $_POST['pesquisar'];
         $nome = $dados['nome'];
         $sobrenome = $dados['sobrenome'];
         $completo = $nome . ' ' . $sobrenome;
-        $sql = "SELECT * FROM horarios  WHERE info LIKE '%{$pesquisar}%' AND estatus = 1 AND usuario_codigo = '$codigo' ORDER BY `info`";
+        $sql = "SELECT * FROM horarios  WHERE info LIKE '%{$pesquisar}%' AND estatus = 1 AND usuario_codigo = '$codigo' OR consorcio LIKE '%{$pesquisar}%' AND estatus = 1 AND usuario_codigo = '$codigo' OR forma_pagamento LIKE '%{$pesquisar}%' AND estatus = 1 AND usuario_codigo = '$codigo' ORDER BY `info`";
         $resultado = mysqli_query($connect, $sql);
 
       if (mysqli_num_rows($resultado) > 0) :
