@@ -51,7 +51,8 @@ if(isset($_POST['submit'])){
     $sobrenome = $info['sobrenome'];
     $completo = $nome . ' ' . $sobrenome;
     if ($selecionar != "-"){
-            if ($pagamento != "-"){
+        
+            if ($pagamento == "Boleto" or $pagamento == "Presencial"){
                 $sql = "UPDATE horarios SET estatus = '1' WHERE info = '$selecionar'";
                 mysqli_query($connect, $sql);
                 $sql = "UPDATE horarios SET consorcio = '$consorcio' WHERE info = '$selecionar'";
@@ -62,6 +63,36 @@ if(isset($_POST['submit'])){
                 mysqli_query($connect, $sql);
                 $sql = "UPDATE horarios SET nome = '$completo' WHERE info = '$selecionar'";
                 mysqli_query($connect, $sql);
+            }
+            if ($pagamento == "Cartao" and $consorcio == "Nenhum"){
+                $sql = "UPDATE horarios SET estatus = '1' WHERE info = '$selecionar'";
+                mysqli_query($connect, $sql);
+                $sql = "UPDATE horarios SET consorcio = '$consorcio' WHERE info = '$selecionar'";
+                mysqli_query($connect, $sql);
+                $sql = "UPDATE horarios SET forma_pagamento = '$pagamento' WHERE info = '$selecionar'";
+                mysqli_query($connect, $sql);
+                $sql = "UPDATE horarios SET usuario_codigo = '$codigo' WHERE info = '$selecionar'";
+                mysqli_query($connect, $sql);
+                $sql = "UPDATE horarios SET nome = '$completo' WHERE info = '$selecionar'";
+                mysqli_query($connect, $sql);
+                $sql = "UPDATE horarios SET pago = '1' WHERE info = '$selecionar'";
+                mysqli_query($connect, $sql);
+                header('LOCATION: pagamento.php');
+            }
+            if ($pagamento == "Cartao" and $consorcio != "Nenhum"){
+                $sql = "UPDATE horarios SET estatus = '1' WHERE info = '$selecionar'";
+                mysqli_query($connect, $sql);
+                $sql = "UPDATE horarios SET consorcio = '$consorcio' WHERE info = '$selecionar'";
+                mysqli_query($connect, $sql);
+                $sql = "UPDATE horarios SET forma_pagamento = '$pagamento' WHERE info = '$selecionar'";
+                mysqli_query($connect, $sql);
+                $sql = "UPDATE horarios SET usuario_codigo = '$codigo' WHERE info = '$selecionar'";
+                mysqli_query($connect, $sql);
+                $sql = "UPDATE horarios SET nome = '$completo' WHERE info = '$selecionar'";
+                mysqli_query($connect, $sql);
+                $sql = "UPDATE horarios SET pago = '1' WHERE info = '$selecionar'";
+                mysqli_query($connect, $sql);
+                header('LOCATION: pagamentoCon.php');
             }
             else{  
                 echo '<script type="text/javascript">';

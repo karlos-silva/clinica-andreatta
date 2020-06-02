@@ -63,8 +63,6 @@ include_once 'header.php';
             <tr>
                 <td>-</td>
                 <td>-</td>
-                
-                
             </tr>
 
             <?php
