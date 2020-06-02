@@ -13,7 +13,7 @@ include_once 'footer.php';
         <select name="nome-escolhido">
         <label for="exampleFormControlTextarea1" >Nome paciente</label>
                 <?php
-         $sql = "SELECT * FROM usuario WHERE tipo = 'cliente' ";
+         $sql = "SELECT * FROM usuario WHERE tipo = 'cliente1' OR tipo = 'cliente2' ";
          $resultado = mysqli_query($connect, $sql);
    
            while($dados = mysqli_fetch_array($resultado)){
