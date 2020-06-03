@@ -17,7 +17,7 @@
   <nav>
     <div class="nav-wrapper">
       <a class="left"  href="#"><img class="img-logo" src="../../img/logo.ico" alt=""> Andreatta</a>
-      <a href="../logout/logout.php" ><i class="fas fa-sign-out-alt sair right"></i></a>
+      <a href="../logout php/logout.php" ><i class="fas fa-sign-out-alt sair right"></i></a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <li><a href="../home_cliente php/home.php">Home</a></li>
         <li><a href=""></a></li>

@@ -54,8 +54,8 @@ include_once 'header.php';
                                 <div class="modal-footer">
                                     <form action="delete.php" method="POST">
                                         <input type="hidden" name="codigo" value="<?php echo $dados['codigo'];?>">
-                                        <button type="submit" name="btn-deletar" class="btn green">Sim, quero deletar!</button>
-                                        <a href="#!" class="modal-close waves-effect waves-green btn red">Cancelar</a>
+                                        <button type="submit" name="btn-deletar" class="btn red">Sim, quero deletar!</button>
+                                        <a href="#!" class="modal-close waves-effect waves-green btn green">Cancelar</a>
                                     </form>
                                 </div>
                             </div>

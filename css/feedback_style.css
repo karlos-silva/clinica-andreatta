@@ -6,12 +6,10 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-image: url("../img/medicos.png");
     background-size: 910px;
     background-repeat: no-repeat; 
     background-position: top center;
     background-color: white;
-    font-family: 'Poppins', sans-serif;
     overflow: hidden;
 }
 
@@ -82,7 +80,6 @@ img{
 .texto-logo >span {
   font-weight: bolder;
   color: brown;
-  font-style: oblique;
   font-size: 70px;
   margin-left: 20px;
 }

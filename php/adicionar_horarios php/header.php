@@ -18,7 +18,7 @@
   <body>
   <nav>
     <div class="nav-wrapper">
-      <a href="logout.php" ><i class="fas fa-sign-out-alt sair right"></i></a>
+      <a href="../logout php/logout.php" ><i class="fas fa-sign-out-alt sair right"></i></a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <li><a href="../home_adm php/home.php">Home</a></li>
         <li><a href=""></a></li>
