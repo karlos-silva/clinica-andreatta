@@ -19,7 +19,7 @@ if($tipo == "cliente2"){
     echo '<div class="form-group">';
     echo '<label for="exampleFormControlTextarea1" >FeedBack</label>';
     echo '<textarea class="form-control" id="exampleFormControlTextarea1" name="feed" rows="3"></textarea>';
-    echo '<button type="submit" name="submit" class="btn btn-primary btn-add"> Adicionar </button>';
+    echo '<button type="submit" name="submit" class="btn btn-primary btn-pesquisar"> Adicionar </button>';
     echo '</div>';
     echo '</form>';
     echo '</div>';

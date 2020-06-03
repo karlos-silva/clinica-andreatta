@@ -29,7 +29,7 @@ include_once 'header.php'
         <label for="validade">Válido até</label>
       </div>
     </div>
-    <button type="submit" name="btn-adicionarProdutos" class="btn btn-primary"> Adicionar </button>
+    <button type="submit" name="btn-adicionarProdutos" class="btn btn-pesquisar"> Adicionar </button>
   </form>
 </div>
 

@@ -13,7 +13,7 @@ include_once 'header.php';
         <div class="container">
             <div class="row ">
                 <form action="pesquisar.php" method="POST">
-                    <div class="input-field input-pesquisar ">
+                    <div class="input-field input-pesquisar">
                         <input id="last_name" type="text" class="validate" name="pesquisar">
                         <label for="last_name">Pesquisar</label>
                         <button type="submit" class=" btn btn-pesquisar" name="btn-pesquisar" id=" btn btn-pesquisar">Pesquisar</button>
@@ -44,8 +44,8 @@ include_once 'header.php';
                             <td><?php echo $dados['fornecedor'];?></td>
                             <td><?php echo $dados['validade'];?></td>
                             <td>
-                                <a href="editar_produtos.php?codigo=<?php echo $dados['codigo'];?>" class="btn btn-info "><i class="material-icons">edit</i></a>
-                                <a href="#modal<?php echo $dados['codigo']; ?>" class="btn red modal-trigger"><i class="material-icons">delete</i></a>
+                                <a href="editar_produtos.php?codigo=<?php echo $dados['codigo'];?>" class="btn btn-edit "><i class="material-icons">edit</i></a>
+                                <a href="#modal<?php echo $dados['codigo']; ?>" class="btn remove modal-trigger"><i class="material-icons">delete</i></a>
                             </td>
 
                             <!-- Modal Structure -->
@@ -79,7 +79,7 @@ include_once 'header.php';
                     ?>
                 </table>
             </div>
-            <a href="adicionar_produtos.php" class= "btn btn-info">Adicionar</a>
+            <a href="adicionar_produtos.php" class= "btn btn-pesquisar">Adicionar</a>
         
 
 <?php

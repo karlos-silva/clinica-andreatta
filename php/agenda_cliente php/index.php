@@ -43,7 +43,7 @@ include_once 'header.php';
                             <td><?php echo $dados['consorcio'];?></td>
                             <td><?php echo $dados['forma_pagamento'];?></td>
                             <td>
-                                <a href="#modal<?php echo $dados['codigo']; ?>" class="btn red modal-trigger"><i class="material-icons">delete</i></a>
+                                <a href="#modal<?php echo $dados['codigo']; ?>" class="btn remove modal-trigger"><i class="material-icons">delete</i></a>
                             </td>
 
                             <!-- Modal Structure -->
@@ -55,8 +55,8 @@ include_once 'header.php';
                                 <div class="modal-footer">
                                     <form action="delete.php" method="POST">
                                         <input type="hidden" name="codigo" value="<?php echo $dados['codigo'];?>">
-                                        <button type="submit" name="btn-deletar" class="btn green">Sim, quero cancelar!</button>
-                                        <a href="#!" class="modal-close waves-effect waves-green btn red">Mudei de ideia</a>
+                                        <button type="submit" name="btn-deletar" class="btn red">Sim, quero cancelar!</button>
+                                        <a href="#!" class="modal-close waves-effect waves-green btn green">Mudei de ideia</a>
                                     </form>
                                 </div>
                             </div>

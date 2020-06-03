@@ -35,7 +35,7 @@ include_once 'footer.php';
     <option>Boleto</option>
     <option>Cartao</option>
 </select>
-<input type="submit" name="submit" value="Marcar" class="btn btn-info ">
+<input type="submit" name="submit" value="Marcar" class="btn btn-pesquisar ">
 </form>
 </div>
 <?php 

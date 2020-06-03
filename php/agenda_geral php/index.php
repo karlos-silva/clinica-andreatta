@@ -44,7 +44,7 @@ include_once 'header.php';
                             <td><?php echo $dados['consorcio'];?></td>
                             <td><?php echo $dados['forma_pagamento'];?></td>
                             <td>
-                                <a href="#modal<?php echo $dados['codigo']; ?>" class="btn red modal-trigger"><i class="material-icons">delete</i></a>
+                                <a href="#modal<?php echo $dados['codigo']; ?>" class="btn remove modal-trigger"><i class="material-icons">delete</i></a>
                             </td>
 
                             <!-- Modal Structure -->

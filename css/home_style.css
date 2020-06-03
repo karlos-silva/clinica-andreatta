@@ -12,7 +12,7 @@ body{
     background-position: top center;
     background-color: white;
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+    overflow: auto;
 }
 
 
@@ -48,7 +48,7 @@ nav a:hover {
   grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr);
   border-radius: 6px;
   max-width: 900px;
-  margin: 540px auto 300px auto;
+  margin:20px auto 300px auto;
   grid-gap:20px
 
 }

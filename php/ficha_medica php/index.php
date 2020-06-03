@@ -19,7 +19,7 @@ include_once 'header.php';
             
         </form>
         
-        <table class="table-ficha">
+        <table>
             <thead>
                 <tr>
                     <th>Nome do Paciente</th>
@@ -36,9 +36,9 @@ include_once 'header.php';
             <tr class="dados">
                     <td><?php echo $dados['nome'];?></td>
                     <td>
-                        <a href="expandir.php?codigo=<?php echo $dados['codigo'];?>" class="btn btn-info "><i >Expandir</i></a>
-                        <a href="editar_dados.php?codigo=<?php echo $dados['codigo'];?>" class="btn btn-info "><i class="material-icons">edit</i></a>
-                        <a href="#modal<?php echo $dados['codigo']; ?>" class="btn red modal-trigger"><i class="material-icons">delete</i></a>
+                        <a href="expandir.php?codigo=<?php echo $dados['codigo'];?>" class="btn btn-edit "><i >Expandir</i></a>
+                        <a href="editar_dados.php?codigo=<?php echo $dados['codigo'];?>" class="btn btn-edit "><i class="material-icons">edit</i></a>
+                        <a href="#modal<?php echo $dados['codigo']; ?>" class="btn remove modal-trigger"><i class="material-icons">delete</i></a>
                     </td>
 
                     <!-- Modal Structure -->
@@ -70,7 +70,7 @@ include_once 'header.php';
             ?>
         </table>
 </div>
-        <a href="adicionar.php" class= "btn btn-info">Adicionar</a>
+        <a href="adicionar.php" class= "btn btn-pesquisar">Adicionar</a>
         
 <?php
 include_once 'footer.php'

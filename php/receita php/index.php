@@ -30,7 +30,7 @@ include_once 'footer.php';
             <div class="form-group">
                 <h6 class="receita">Receita médica</h6>
                 <textarea class="form-control" id="exampleFormControlTextarea1" name="receita" rows="3"></textarea>
-                <button type="submit" name="submit" class="btn btn-primary btn-add"> Adicionar </button>
+                <button type="submit" name="submit" class="btn btn-primary btn-pesquisar"> Adicionar </button>
             </div>
             
     </form>

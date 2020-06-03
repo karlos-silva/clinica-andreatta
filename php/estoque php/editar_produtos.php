@@ -35,7 +35,7 @@ endif;
     <input type="text" class="form-control" name="validade" id="validade" placeholder="00/00/0000" value="<?php echo $dados['validade'];?>">
   </div>
 
-  <button type="submit" name="btn-editarProdutos" class="btn btn-primary"> Atualizar </button>
+  <button type="submit" name="btn-editarProdutos" class="btn btn-pesquisar"> Atualizar </button>
 </form>
 
 

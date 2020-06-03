@@ -29,7 +29,7 @@ include_once 'footer.php'
 				</div>
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-10">
-                    <input type="submit" name="submit" value="Registrar" class="btn btn-info ">
+                    <input type="submit" name="submit" value="Registrar" class="btn btn-pesquisar ">
 					</div>
 				</div>
 			</form>

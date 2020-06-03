@@ -54,7 +54,7 @@ endif;
         <input type="text" name="alergia" value="<?php echo $dados['alergia'];?>">
        
       </div>
-      <button type="submit" name="submit" class="btn btn-primary"> Atualizar </button>
+      <button type="submit" name="submit" class="btn btn-edit"> Atualizar </button>
     </div>
 
     <div class="row">

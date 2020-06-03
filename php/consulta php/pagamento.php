@@ -44,7 +44,7 @@ if(isset($_POST['submit'])){
     $codigo = $_SESSION['codigo'];
     $sql = "INSERT INTO `pagamento` (`valor`, `usuario_codigo`) VALUES ('250', '$codigo')";
     mysqli_query($connect, $sql);
-    header('LOCATION: ../agenda_cliente/index.php');
+    header('LOCATION: ../agenda_cliente php/index.php');
 }
 
 ?>
