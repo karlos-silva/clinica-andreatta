@@ -11,6 +11,17 @@ body{
 	  background-position: right top;
 	  background-size: 1200px;
 }
+
+.img-logo {
+	width: 16px;
+	height: 16px;
+}
+.left {
+ margin-right: 20px;
+ margin-left: 20px;
+}
+
+
 select{
 width: 60%;
 border: 1px solid black;

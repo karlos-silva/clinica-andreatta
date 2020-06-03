@@ -9,36 +9,26 @@
     <link rel="stylesheet" href="../../css/consulta_style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <link rel="shortcut icon" href="../../img/logo.ico" />
   
     <title>Clinica Andreatta</title>
   </head>
   <body>
-<nav class="navbar navbar-expand-lg navbar-light">
-
-    <a class="navbar-brand brand"  href="#"><img src="../../img/logo.png" alt="" #FF6366> Andreatta</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="../home_cliente php/home.php">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="../consulta php/index.php">Marcar Consulta</a>
-          </li>
-          <li class="nav-item">
-          <a class="nav-link" href="../agenda_cliente/index.php">Consultas Marcadas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../lista_receita php/index.php">Receitas medicas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../feedback php/index.php">FeedBack da Consulta</a>
-        </li>
+  <nav>
+    <div class="nav-wrapper">
+      <a class="left"  href="#"><img class="img-logo" src="../../img/logo.ico" alt=""> Andreatta</a>
+      <a href="../logout/logout.php" ><i class="fas fa-sign-out-alt sair right"></i></a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="../home_cliente php/home.php">Home</a></li>
+        <li><a href=""></a></li>
+        <li><a href="../consulta php/index.php">Marcar Consulta</a></li>
+        <li><a href=""></a></li>
+        <li><a href="../agenda_cliente php/index.php">Consultas Marcadas</a></li>
+        <li><a href=""></a></li>
+        <li><a href="../lista_receita php/index.php">Receitas Médicas</a></li>
+        <li><a href=""></a></li>
+        <li class="active"><a href="../feedback php/index.php">FeedBack da Consulta</a></li>
       </ul>
     </div>
-    <a href="logout.php" ><i class="fas fa-sign-out-alt sair right"></i></a>
-</nav>
+  </nav>

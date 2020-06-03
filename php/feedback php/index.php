@@ -26,7 +26,9 @@ if($tipo == "cliente2"){
 
 }
 else{
-    echo '<h5>É nescessario ja ter feito alguma consulta para dar feedback</h5>';
+    echo '<div class="empty">';
+    echo '<h6>É nescessario ja ter feito alguma consulta para dar feedback"</h6>';
+    echo '</div>';
 }
 
 if(isset($_POST['submit'])){

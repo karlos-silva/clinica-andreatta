@@ -10,9 +10,32 @@ body{
     background-size: 910px;
     background-repeat: no-repeat; 
     background-position: top center;
-    background-color: rgb(233, 233, 233);
-  
+    background-color: white;
 }
+
+
+nav {
+  background-color: #FF6366;
+  margin-bottom: 50px;
+  font-weight: bolder;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: none;
+
+}
+
+.sair {
+  margin-right: 20px;
+}
+
+.left {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+
 
 .principal{
   display: grid;
@@ -22,9 +45,6 @@ body{
   margin: 540px auto 300px auto;
   grid-gap:20px
 
-
-
-   
 }
 
 img{
@@ -66,7 +86,7 @@ img{
 
 .titulo{
   font-size: 21px;
-  color: rgb(224, 119, 119);
+  color: #FF6366;
   position: relative;
   top: -0.5em;
   padding: 5px 10px;
@@ -107,3 +127,4 @@ p{
   margin-top: 4px;
   font-size: 14px;
 }
+
