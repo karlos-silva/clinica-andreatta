@@ -8,35 +8,33 @@ include_once 'header.php';
 			<img src="../../img/register.svg">
         </div>
         <?php
-            if(isset($_SESSION['inf_incompletas'])):
+						if(isset($_SESSION['inf_incompletas'])):
+							echo '<script type="text/javascript">';
+              echo ' alert("Informações incompletas")';
+              echo '</script>';
 				?>
 				
-				<div class="notification icon">
-      	<i class="far fa-check-circle"></i> 
-      	Informações Incompletas!
-    		</div>
         <?php
         endif;
         unset($_SESSION['inf_incompletas']);
         ?>
         <?php
-            if(isset($_SESSION['status_cadastro'])):
-        ?>
-        <div class="alerta sucesso">
+						if(isset($_SESSION['status_cadastro'])):
+				?>
+				  <div class="alerta sucesso">
             <p>Cadastro efetuado!</p>
             <p>Faça login informando o seu usuário e senha <a href="../../php/login php/index.php">aqui</a></p>
         </div>
-        
         <?php
         endif;
         unset($_SESSION['status_cadastro']);
         ?>
         <?php
-            if(isset($_SESSION['usuario_existe'])):
+						if(isset($_SESSION['usuario_existe'])):
+							echo '<script type="text/javascript">';
+              echo ' alert("O usuário escolhido já existe. Informe outro e tente novamente.")';
+              echo '</script>';
         ?>
-        <div class="notification is-info">
-            <p>O usuário escolhido já existe. Informe outro e tente novamente.</p>
-        </div>
         <?php
         endif;
         unset($_SESSION['usuario_existe']);
