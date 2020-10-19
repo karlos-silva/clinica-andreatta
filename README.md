@@ -15,7 +15,7 @@ A aplicação contém um gerenciamento completo de uma clínica, com controle de
 
   <img alt="Happy Web" title="Happy Web" src="./assets/login.png" width="400px">
   
-  <img alt="Happy Web" title="Happy Web" src="./assets/estoque.png" width="400px">
+  <img alt="Happy Web" title="Happy Web" src="./assets/ESTOQUE.png" width="400px">
 </p>
 
 
