@@ -19,4 +19,4 @@ A aplicação contém um gerenciamento completo de uma clínica, com controle de
 </p>
 
 
-<p>Feito com 💞 por Karlos Silva 🚀</p>
+<p>Feito com 💞 por Karlos Silva e Bernardo Andreatta 🚀</p>
